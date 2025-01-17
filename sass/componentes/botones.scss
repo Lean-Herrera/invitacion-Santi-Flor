@@ -1,0 +1,22 @@
+button {
+
+    justify-self: center;
+    width: 90%;
+    border: 0;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $color-botones;
+    box-shadow: 0px 0px 25px -10px ;
+
+    a {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        font-family: $fuente-principal;
+        text-decoration: none;
+        
+    }
+}

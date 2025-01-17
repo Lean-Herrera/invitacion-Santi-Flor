@@ -1,0 +1,924 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  justify-self: center;
+  width: 90%;
+  border: 0;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #AEDCEB;
+  box-shadow: 0px 0px 25px -10px;
+}
+button a {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
+
+svg {
+  position: absolute;
+  bottom: 7%;
+  left: 30%;
+  max-width: fit-content;
+  height: fit-content;
+  display: grid;
+}
+svg .ampersand {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  font-family: "Poppins";
+  font-size: 240px;
+  fill: url(#grad1);
+  filter: url(#shadow);
+}
+
+.div-cola {
+  width: 10px;
+}
+.div-cola svg.cola {
+  position: relative;
+  left: -1px;
+  height: 70px;
+  width: 100px;
+}
+.div-cola svg.cola .cola-cinta {
+  position: relative;
+  height: 100%;
+  fill: #002E5A;
+}
+
+.div-cola {
+  width: 10px;
+}
+.div-cola svg.cola-1 {
+  position: relative;
+  left: -1px;
+  height: 70px;
+  width: 100px;
+}
+.div-cola svg.cola-1 .cola-cinta {
+  position: relative;
+  height: 100%;
+  fill: #002E5A;
+}
+
+.fiesta .cinta {
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  width: 70vw;
+}
+.fiesta .cinta .div-cola {
+  width: 10px;
+}
+.fiesta .cinta .div-cola svg.cola {
+  position: relative;
+  left: -1px;
+  height: 70px;
+  width: 100px;
+}
+.fiesta .cinta .div-cola svg.cola .cola-cinta {
+  position: relative;
+  height: 100%;
+  fill: #002E5A;
+}
+
+.fiesta .cinta {
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  width: 70vw;
+}
+.fiesta .cinta .div-cola {
+  width: 10px;
+}
+.fiesta .cinta .div-cola svg.cola-1 {
+  position: relative;
+  left: -1px;
+  height: 70px;
+  width: 100px;
+}
+.fiesta .cinta .div-cola svg.cola-1 .cola-cinta {
+  position: relative;
+  height: 100%;
+  fill: #002E5A;
+}
+
+header .encabezado {
+  height: 60vh;
+  position: sticky;
+  background-size: contain;
+  background-image: url("../imagenes/novios.jpeg");
+  background-repeat: no-repeat;
+  display: grid;
+  justify-content: center;
+  background-attachment: fixed;
+  background-color: #E1F2F9;
+  font-family: Allura;
+}
+header .encabezado .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.507);
+  mix-blend-mode: overlay;
+}
+header .encabezado .curva {
+  z-index: 2;
+  width: 100vw;
+  align-self: end;
+  position: absolute;
+}
+header .encabezado .wave-container {
+  top: 80%;
+  width: 100vw;
+  position: relative;
+  overflow: auto;
+  background-color: transparent;
+  /* Color de fondo del div */
+  height: 100px;
+  /* Ajusta según el tamaño que necesites */
+}
+header .encabezado .wave-container::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  /* Ajusta la altura de la ola */
+  background: url("../imagenes/wave.svg");
+  /* Archivo SVG externo */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: #E1F2F9;
+  display: grid;
+  justify-content: center;
+}
+main .fecha-y-nombres {
+  margin-block: 2rem;
+  display: grid;
+  margin-top: 30px;
+}
+main .fecha-y-nombres span.fecha {
+  display: inline-block;
+  white-space: nowrap;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  color: #002E5A;
+  padding: 10px 30px;
+  margin-bottom: 35px;
+  margin-top: 40px;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #AEDCEB, #E1F2F9, #AEDCEB);
+  justify-self: center;
+  text-align: center !important;
+}
+main .fecha-y-nombres svg {
+  display: none;
+  position: absolute;
+  /* Posiciona el SVG detrás */
+  width: auto;
+  /* Tamaño relativo al ancho de la ventana */
+  height: auto;
+  /* Mantener la proporción */
+  max-width: 300px;
+  /* Ancho máximo para pantallas más grandes */
+  z-index: 1;
+  /* Detrás del texto */
+  bottom: -32%;
+}
+main .fecha-y-nombres svg .ampersand {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  font-family: "Poppins";
+  font-size: 240px;
+  fill: url(#grad1);
+  filter: url(#shadow);
+  z-index: 1;
+}
+main .fecha-y-nombres span.separador {
+  background-color: #AEDCEB;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+main .fecha-y-nombres span.separador::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  height: 1px;
+  left: 65px;
+  background: #AEDCEB;
+}
+main .fecha-y-nombres span.separador::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  height: 1px;
+  right: 65px;
+  background: #AEDCEB;
+}
+main .fecha-y-nombres h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Style Script", cursive;
+  color: #002E5A;
+  font-size: 70px;
+  line-height: 75px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+main .versiculo {
+  display: grid;
+}
+main .versiculo p {
+  color: #002E5A;
+  font-family: sevillana;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem;
+  width: 80vw;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+}
+main .versiculo p .comillas-apertura {
+  width: 30px;
+  margin: 10px 0;
+}
+main .versiculo p .comillas-cierre {
+  width: 30px;
+  margin: 10px 0;
+}
+main .flores {
+  justify-self: center;
+  display: grid;
+  position: relative;
+  margin-block: 2rem;
+}
+main .flores .flores-circulo {
+  position: absolute;
+  width: 45vw;
+  z-index: 4;
+  top: -5%;
+  left: -3%;
+}
+main .flores img {
+  width: 80vw;
+  z-index: 1;
+}
+main .flores p {
+  justify-self: center;
+  justify-content: center;
+  position: absolute;
+  /* Posicionar elementos de forma absoluta */
+  top: 50%;
+  /* Centrando verticalmente */
+  left: 50%;
+  /* Centrando horizontalmente */
+  transform: translate(-35%, -80%);
+  /* Alinear al centro */
+  font-size: 6vw;
+  line-height: 35px;
+  color: #002E5A;
+  font-family: "Playfair Display", serif;
+  z-index: 3;
+}
+main .flores .corazon {
+  position: absolute;
+  top: 54%;
+  left: 40%;
+  width: 15vw;
+  /* Tamaño del corazón */
+  height: 100px;
+  /* Tamaño del corazón */
+  fill: #AEDCEB;
+  /* Color del corazón */
+  z-index: 2;
+}
+main .flores .circulo {
+  display: none;
+  height: 68vw;
+  width: 68vw;
+  background-color: #deeefa;
+  position: absolute;
+  top: 50%;
+  /* Centrando verticalmente */
+  left: 50%;
+  /* Centrando horizontalmente */
+  transform: translate(-50%, -50%);
+  /* Alinear al centro */
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+main .ceremonia {
+  justify-content: center;
+  display: grid;
+  position: relative;
+  margin-bottom: 5rem;
+}
+main .ceremonia .flor-con-movimiento {
+  overflow: hidden;
+  width: 70vw;
+  position: absolute;
+  left: -25%;
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+}
+main .ceremonia .flor-con-movimiento .animated-image {
+  width: 26vw;
+  position: absolute;
+  bottom: 30vw;
+  transform: translateX(18vw);
+  opacity: 1;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+main .ceremonia .flor-con-movimiento .animated-image.show {
+  transform: translate-X(0);
+  opacity: 1;
+}
+main .ceremonia .flor-con-movimiento .animated-image-2 {
+  width: 28vw;
+  position: absolute;
+  bottom: -3vw;
+  transform: translateX(15vw);
+  opacity: 1;
+  transition: transform 0.9s ease-out, opacity 0.9s ease-out;
+}
+main .ceremonia .flor-con-movimiento .animated-image-2.show {
+  transform: translate-X(0);
+  opacity: 1;
+  transform: translateZ(1);
+}
+main .ceremonia .flor-con-movimiento .animated-image-1 {
+  width: 22vw;
+  position: absolute;
+  bottom: 16vh;
+  transform: translateX(23vw);
+  opacity: 1;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+main .ceremonia .flor-con-movimiento .animated-image-1.show {
+  transform: translate-X(0);
+  opacity: 1;
+  transform: translateZ(0);
+}
+main .ceremonia .cinta {
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  width: 70vw;
+}
+main .ceremonia .cinta .div-cola .cola-cinta {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  fill: #002E5A;
+}
+main .ceremonia .cinta h2 {
+  color: #fff;
+  padding-inline: 2rem;
+  font-size: 9vw;
+  font-family: "Style Script", cursive;
+  background-color: #002E5A;
+  align-self: center;
+  text-align: center;
+  width: 70vw;
+  font-weight: 500;
+}
+main .ceremonia section {
+  width: 100%;
+  gap: 2rem;
+  margin-block: 2rem;
+  justify-content: center;
+  display: grid;
+}
+main .ceremonia section h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  justify-self: center;
+  color: #002E5A;
+}
+main .ceremonia section h3 {
+  text-align: center;
+  color: #002E5A;
+  font-size: 1.4rem;
+  justify-self: center;
+}
+main .ceremonia section .mapa {
+  justify-self: center;
+}
+main .ceremonia section .mapa button {
+  width: 80vw;
+  border: 0;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #AEDCEB;
+}
+main .ceremonia section .mapa button a {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+main .ceremonia::after {
+  background-image: url("../../imagenes/img_lineas01.svg");
+  position: absolute;
+  content: "";
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+  bottom: -15%;
+}
+main .galeria {
+  padding-block: 2rem;
+  display: grid;
+}
+main .galeria h2 {
+  text-align: center;
+  justify-self: center;
+  font-family: "Style Script", cursive;
+  width: 100%;
+  display: inline-block;
+  color: #002E5A;
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+main .galeria p {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-family: "Poppins";
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+}
+main .galeria .camara {
+  justify-self: center;
+  margin-block: 1rem;
+  width: 80px;
+}
+main .galeria .carousel-container {
+  height: 400px;
+  width: 100vw;
+  max-width: 300px;
+  position: relative;
+  justify-self: center;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+main .galeria .carousel {
+  display: flex;
+  transition: transform 5s ease;
+  height: fit-content;
+  animation: slide 30s infinite ease-in-out;
+  gap: 1rem;
+}
+main .galeria .carousel-slide {
+  min-width: 100%;
+  transition: opacity 1s ease;
+  display: grid;
+}
+main .galeria .carousel-slide.active {
+  opacity: 1;
+  /* Mostrar la imagen activa */
+}
+main .galeria .carousel-slide img {
+  width: 80%;
+  display: block;
+  border-radius: 10px;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+}
+main .galeria button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 10;
+}
+main .galeria button.prev {
+  left: 10px;
+}
+main .galeria button.next {
+  right: 10px;
+}
+main .galeria button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  16% {
+    transform: translateX(-107%);
+  }
+  33% {
+    transform: translateX(-209%);
+  }
+  49% {
+    transform: translateX(-315%);
+  }
+  65% {
+    transform: translateX(-416%);
+  }
+  84% {
+    transform: translateX(-525%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+main .fiesta {
+  display: grid;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+main .fiesta .titulo-fiesta {
+  color: #fff;
+  padding-inline: 2rem;
+  font-size: 9vw;
+  font-family: "Style Script", cursive;
+  background-color: #002E5A;
+  align-self: center;
+  text-align: center;
+  width: 70vw;
+  font-weight: 500;
+}
+main .fiesta .dresscode {
+  display: grid;
+  justify-self: center;
+  background-color: #fff;
+  padding: 0 40px;
+  border-radius: 20px;
+  min-height: 300px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 0px #002E5A;
+}
+main .fiesta .dresscode .corbata {
+  justify-self: center;
+  margin-block: 1rem;
+  width: 64px;
+}
+main .fiesta .dresscode h2 {
+  color: #002E5A;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+main .fiesta .dresscode p {
+  font-family: "Poppins";
+  color: #818B94;
+  justify-self: center;
+  text-align: center;
+  font-size: 1rem;
+}
+main .fiesta .dresscode p b {
+  color: #002E5A;
+}
+main .fiesta .musica {
+  display: grid;
+  justify-self: center;
+  background-color: #fff;
+  padding: 0 40px;
+  border-radius: 20px;
+  min-height: 300px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 0px #002E5A;
+}
+main .fiesta .musica .notas-musicales {
+  justify-self: center;
+  margin-block: 1rem;
+  width: 60px;
+}
+main .fiesta .musica h2 {
+  color: #002E5A;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+main .fiesta .musica p {
+  font-family: "Poppins";
+  color: #818B94;
+  justify-self: center;
+  text-align: center;
+  font-size: 1rem;
+}
+main .fiesta .musica button {
+  justify-self: center;
+  width: 90%;
+  border: 0;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #AEDCEB;
+}
+main .fiesta .musica button a {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
+main .fiesta .comida {
+  display: grid;
+  justify-self: center;
+  background-color: #fff;
+  padding: 0 40px;
+  border-radius: 20px;
+  min-height: 400px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 0px #002E5A;
+}
+main .fiesta .comida .plato {
+  justify-self: center;
+  margin-block: 1rem;
+  width: 70px;
+}
+main .fiesta .comida h2 {
+  color: #002E5A;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+main .fiesta .comida p {
+  font-family: "Poppins";
+  color: #818B94;
+  justify-self: center;
+  text-align: center;
+  font-size: 1rem;
+}
+main .fiesta .comida button {
+  justify-self: center;
+  width: 90%;
+  border: 0;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #AEDCEB;
+}
+main .fiesta .comida button a {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
+main .fiesta .regalo {
+  display: grid;
+  justify-self: center;
+  background-color: #fff;
+  padding: 0 40px;
+  border-radius: 20px;
+  min-height: 300px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 0px #002E5A;
+}
+main .fiesta .regalo .caja-regalo {
+  justify-self: center;
+  margin-block: 1rem;
+  width: 60px;
+}
+main .fiesta .regalo h2 {
+  color: #002E5A;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+main .fiesta .regalo p {
+  font-family: "Poppins";
+  color: #818B94;
+  justify-self: center;
+  text-align: center;
+  font-size: 1rem;
+}
+main .fiesta .regalo h3 {
+  justify-self: center;
+}
+main .asistencia {
+  margin-top: 4rem;
+  display: grid;
+  justify-self: center;
+  background-color: #fff;
+  padding: 2rem 40px;
+  border-radius: 20px;
+  min-height: 400px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 0px #002E5A;
+  position: relative;
+}
+main .asistencia .flores-asistencia {
+  position: absolute;
+  width: 50vw;
+  z-index: 4;
+  top: -10%;
+  left: -15%;
+}
+main .asistencia h2 {
+  align-self: end;
+  text-align: center;
+  justify-self: center;
+  color: #002E5A;
+  font-family: "Playfair Display", serif;
+}
+main .asistencia p {
+  align-self: center;
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Poppins";
+  color: #818B94;
+  justify-self: center;
+}
+main .asistencia .link-de-asistencia {
+  align-self: end;
+}
+
+footer {
+  background-color: #E1F2F9;
+}
+footer .despedida {
+  padding-top: 5rem;
+}
+footer .despedida .imagen-despedida {
+  padding-top: 16%;
+  padding-bottom: 16%;
+  background: url("../imagenes/manos.jpeg") center center;
+  position: relative;
+  margin-bottom: 6rem;
+  height: 650px;
+  background-attachment: fixed;
+}
+footer .despedida .imagen-despedida::before {
+  background-image: url("../imagenes/img_ondas05.svg");
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100%;
+  width: 100%;
+  top: -1px;
+  background-color: rgba(178, 166, 209, 0.4);
+}
+footer .despedida .imagen-despedida::after {
+  background-image: url("../imagenes/img_ondas06.svg");
+  position: absolute;
+  content: "";
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+  width: 100%;
+  bottom: -5px;
+  z-index: 99;
+}
+footer .despedida .container {
+  display: grid;
+  /* Activar Flexbox */
+  align-items: center;
+  /* Centrar verticalmente */
+  justify-content: center;
+  /* Centrar horizontalmente */
+  position: relative;
+  /* Posición relativa para el SVG y el texto */
+  width: 100%;
+  /* Ancho completo */
+  height: 250px;
+  /* Altura del viewport */
+  margin: 0;
+  overflow: hidden;
+  /* Evita el desbordamiento */
+}
+footer .despedida .container span.separador {
+  background-color: #AEDCEB;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+footer .despedida .container span.separador::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  height: 1px;
+  left: 65px;
+  background: #AEDCEB;
+}
+footer .despedida .container span.separador::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  height: 1px;
+  right: 65px;
+  background: #AEDCEB;
+}
+footer .despedida .container h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Style Script", cursive;
+  color: #002E5A;
+  font-size: 70px;
+  line-height: 75px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+footer .despedida .ultimo-parrafo {
+  display: grid;
+}
+footer .despedida .ultimo-parrafo p {
+  padding: 2rem;
+  text-align: center;
+  color: #E1F2F9;
+  margin-top: 2rem;
+  font-size: 6vw;
+  font-weight: 300;
+  font-family: "Outfit", Sans Serif;
+  font-family: "Playfair Display", serif;
+  background-color: #002E5A;
+  width: 80vw;
+  justify-self: center;
+  border-radius: 10px;
+}
+footer .despedida h3 {
+  padding-block: 2rem;
+  text-align: center;
+  color: #002E5A;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

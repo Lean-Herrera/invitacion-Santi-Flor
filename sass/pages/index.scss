@@ -1,0 +1,1215 @@
+header {
+    .encabezado {
+
+        height: 60vh;
+        position: sticky;
+        //position: relative;
+        //background-image: url("https://www.facebook.com/photo/?fbid=3199221956880925&set=a.258308264305657");
+        background-size: contain;
+        background-image: url("../imagenes/novios.jpeg");
+        background-repeat: no-repeat;
+        display: grid;
+        justify-content: center;
+        background-attachment: fixed;
+        background-color: $color-primario;
+        font-family: Allura;
+
+
+
+        .capa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.507);
+            mix-blend-mode: overlay;
+
+
+        }
+
+        .curva {
+            z-index: 2;
+            width: 100vw;
+            align-self: end;
+            position: absolute;
+
+
+        }
+
+
+        .wave-container {
+            top: 80%;
+            width: 100vw;
+            position: relative;
+            overflow: auto;
+            background-color: transparent;
+            /* Color de fondo del div */
+            height: 100px;
+            /* Ajusta según el tamaño que necesites */
+        }
+
+        .wave-container::before {
+            content: '';
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            /* Ajusta la altura de la ola */
+            background: url('../imagenes/wave.svg');
+            /* Archivo SVG externo */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+    }
+
+}
+
+main {
+    //background-color: $color-primario;
+    //background-color: $color-primario;
+    background-color: $color-primario;
+    display: grid;
+    justify-content: center;
+
+
+
+    .fecha-y-nombres {
+
+        margin-block: 2rem;
+        display: grid;
+        margin-top: 30px;
+
+        span.fecha {
+            // justify-content: center;
+            // font-family: $fuente-principal;
+            // justify-self: center;
+            // padding: 5px 30px 10px;
+            // align-self: top;
+            // color: $color-secundario;
+            // border: 2px solid;
+            // margin: 0px 0px 50px;
+            // width: fit-content;
+            // border-image-slice: 1;
+            // border-image-source: linear-gradient(to right, $color-primario, $color-secundario, $color-primario);
+            // border-width: 1px;
+
+            display: inline-block;
+            white-space: nowrap;
+            width: fit-content;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 22px;
+            color: $color-3;
+            padding: 10px 30px;
+            margin-bottom: 35px;
+            margin-top: 40px;
+            border: 2px solid;
+            border-image-slice: 1;
+            border-width: 2px;
+            border-image-source: linear-gradient(to right, $color-secundario, #E1F2F9, $color-secundario);
+            justify-self: center;
+            text-align: center !important;
+        }
+
+        // svg {
+        //     position: absolute;
+        //     bottom: 7%;
+        //     left: 30%;
+        //     max-width: fit-content;
+        //     height: fit-content;
+        //     display: grid;
+
+        //     .ampersand {
+
+        //         align-self: center;
+        //         justify-self: center;
+        //         position: relative;
+        //         font-family: 'Poppins';
+        //         font-size: 240px;
+        //         fill: url(#grad1);
+        //         filter: url(#shadow);
+        //     }
+        //}
+
+
+        // h1 {
+
+        //     font-family: $fuente-principal;
+        //     justify-self: center;
+        //     align-self: center;
+        //     font-size: 70px;
+        //     line-height: 55px;
+        //     color: $color-3;
+        //     text-transform: uppercase;
+        //     font-weight: 400;
+        //     z-index: 2;
+
+        //     span {
+        //         display: none;
+        //         justify-content: center;
+        //         font-size: 250px;
+        //         z-index: -1;
+        //         color: red;
+
+        //     }
+        // }
+
+
+        // .container {
+
+        //     display: grid;
+        //     /* Activar Flexbox */
+        //     align-items: center;
+        //     /* Centrar verticalmente */
+        //     justify-content: center;
+        //     /* Centrar horizontalmente */
+        //     position: relative;
+        //     /* Posición relativa para el SVG y el texto */
+        //     width: 100%;
+        //     /* Ancho completo */
+        //     height: 50vw;
+        //     /* Altura del viewport */
+        //     margin: 0;
+        //     overflow: hidden;
+        //     /* Evita el desbordamiento */
+
+
+        svg {
+            display: none;
+            // position: absolute;
+            // bottom: -360%;
+            // left: 30%;
+            // max-width: fit-content;
+            // height: fit-content;
+            // display: grid;
+
+            position: absolute;
+            /* Posiciona el SVG detrás */
+            width: auto;
+            /* Tamaño relativo al ancho de la ventana */
+            height: auto;
+            /* Mantener la proporción */
+            max-width: 300px;
+            /* Ancho máximo para pantallas más grandes */
+            z-index: 1;
+            /* Detrás del texto */
+            bottom: -32%;
+
+            .ampersand {
+
+                align-self: center;
+                justify-self: center;
+                position: relative;
+                font-family: 'Poppins';
+                font-size: 240px;
+                fill: url(#grad1);
+                filter: url(#shadow);
+                z-index: 1;
+
+
+
+            }
+        }
+
+        span.separador {
+            background-color: #AEDCEB;
+            position: relative;
+            display: inline-block;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            justify-self: center;
+            margin-bottom: 10px;
+
+
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 30px;
+                width: 80px;
+                height: 1px;
+                left: 65px;
+                background: #AEDCEB;
+            }
+
+            &::after {
+
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 30px;
+                width: 80px;
+                height: 1px;
+                right: 65px;
+                background: #AEDCEB;
+            }
+        }
+
+        h1 {
+
+
+
+            // position: relative; //sin esto, no se coloca delante del svg
+            // text-align: center;
+            // font-family: $fuente-3;
+            // justify-self: center;
+            // align-self: center;
+            // font-size: 70px;
+            // line-height: 55px;
+            // color: $color-3;
+            // text-transform: uppercase;
+            // font-weight: 400;
+            // z-index: 2;
+            width: 100%;
+            text-align: center;
+            font-family: 'Style Script', cursive;
+            color: $color-3;
+            font-size: 70px;
+            line-height: 75px;
+            margin-bottom: 0;
+            font-weight: 500;
+
+        }
+
+    }
+
+
+
+
+
+    // }
+
+
+
+
+
+    .versiculo {
+
+        display: grid;
+
+        p {
+
+            color: $color-3;
+            font-family: sevillana;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 1rem;
+            width: 80vw;
+            justify-self: center;
+            justify-content: center;
+            text-align: center;
+
+            .comillas-apertura {
+                width: 30px;
+                margin: 10px 0;
+            }
+
+            .comillas-cierre {
+                width: 30px;
+                margin: 10px 0;
+            }
+
+
+
+        }
+    }
+
+    .flores {
+        justify-self: center;
+        display: grid;
+        position: relative;
+        margin-block: 2rem;
+
+        .flores-circulo {
+            position: absolute;
+            width: 45vw;
+            z-index: 4;
+            top: -5%;
+            left: -3%;
+        }
+
+
+        img {
+            width: 80vw;
+            z-index: 1;
+        }
+
+        p {
+            justify-self: center;
+            justify-content: center;
+            position: absolute;
+            /* Posicionar elementos de forma absoluta */
+            top: 50%;
+            /* Centrando verticalmente */
+            left: 50%;
+            /* Centrando horizontalmente */
+            transform: translate(-35%, -80%);
+            /* Alinear al centro */
+            font-size: 6vw;
+            line-height: 35px;
+            color: $color-3 ;
+            font-family: $fuente-principal;
+            z-index: 3;
+
+
+
+        }
+
+        .corazon {
+
+            position: absolute;
+            top: 54%;
+            left: 40%;
+            width: 15vw;
+            /* Tamaño del corazón */
+            height: 100px;
+            /* Tamaño del corazón */
+            fill: $color-botones;
+            /* Color del corazón */
+            z-index: 2;
+        }
+
+        .circulo {
+            display: none;
+            height: 68vw;
+            width: 68vw;
+            background-color: $color-circulo;
+            // background-color: #addbff;
+            position: absolute;
+            top: 50%;
+            /* Centrando verticalmente */
+            left: 50%;
+            /* Centrando horizontalmente */
+            transform: translate(-50%, -50%);
+            /* Alinear al centro */
+            border-radius: 100%;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+        }
+    }
+
+    .ceremonia {
+        justify-content: center;
+        display: grid;
+        position: relative;
+        margin-bottom: 5rem;
+
+        //Flores emergentes
+
+
+        .flor-con-movimiento {
+            overflow: hidden; // Para que la imagen no se vea al estar fuera del contenedor
+            width: 70vw; // Asegura que el contenedor ocupe todo el ancho
+            position: absolute;
+            left: -25%;
+            display: flex;
+            flex-direction: column;
+            height: 310px;
+
+
+
+            .animated-image {
+                width: 26vw; // Tamaño de la imagen, ajusta según tu necesidad
+                position: absolute;
+                bottom: 30vw;
+
+                transform: translateX(18vw); // Inicialmente, mueve la imagen fuera del viewport desde la derecha
+                opacity: 1; // Imagen oculta al inicio
+                transition: transform $duration $easing, opacity $duration $easing; // Transiciones para suavizar el efecto
+
+                &.show {
+                    transform: translate-X(0); // Cuando se añade la clase 'show', la imagen se muestra
+                    opacity: 1; // La imagen se hace visible
+                }
+            }
+
+            .animated-image-2 {
+                width: 28vw; // Tamaño de la imagen, ajusta según tu necesidad
+                position: absolute;
+                bottom: -3vw;
+
+                transform: translateX(15vw); // Inicialmente, mueve la imagen fuera del viewport desde la derecha
+                opacity: 1; // Imagen oculta al inicio
+                transition: transform $duration-3 $easing, opacity $duration-3 $easing; // Transiciones para suavizar el efecto
+
+                &.show {
+                    transform: translate-X(0); // Cuando se añade la clase 'show', la imagen se muestra
+                    opacity: 1; // La imagen se hace visible
+                    transform: translateZ(1);
+                }
+            }
+
+            .animated-image-1 {
+                width: 22vw; // Tamaño de la imagen, ajusta según tu necesidad
+                position: absolute;
+                bottom: 16vh;
+
+                transform: translateX(23vw); // Inicialmente, mueve la imagen fuera del viewport desde la derecha
+                opacity: 1; // Imagen oculta al inicio
+                transition: transform $duration-2 $easing, opacity $duration-2 $easing; // Transiciones para suavizar el efecto
+
+                &.show {
+                    transform: translate-X(0); // Cuando se añade la clase 'show', la imagen se muestra
+                    opacity: 1; // La imagen se hace visible
+                    transform: translateZ(0);
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+        .cinta {
+            justify-content: center;
+            justify-self: center;
+            display: flex;
+            width: 70vw;
+
+            .div-cola {
+
+
+                .cola-cinta {
+                    position: relative;
+                    width: 100%;
+                    height: 10%;
+                    fill: $color-3;
+                }
+
+            }
+
+
+
+            h2 {
+
+                color: $color-4;
+                padding-inline: 2rem;
+                font-size: 9vw;
+                font-family: $fuente-3;
+                background-color: $color-3;
+                align-self: center;
+                text-align: center;
+                width: 70vw;
+                font-weight: 500;
+            }
+
+        }
+
+        section {
+            width: 100%;
+            gap: 2rem;
+            margin-block: 2rem;
+            justify-content: center;
+            display: grid;
+
+            h2 {
+                font-size: 2rem;
+                font-family: $fuente-principal;
+                justify-self: center;
+                color: $color-3;
+            }
+
+            h3 {
+                text-align: center;
+                color: $color-3;
+                font-size: 1.4rem;
+                justify-self: center;
+            }
+
+            .mapa {
+
+                justify-self: center;
+
+                button {
+                    width: 80vw;
+                    border: 0;
+                    height: 40px;
+                    border-radius: 20px;
+                    background-color: $color-botones;
+
+                    a {
+                        justify-content: center;
+                        display: flex;
+                        width: 100%;
+                        font-size: 20px;
+                        color: white;
+                        font-family: $fuente-principal;
+                        text-decoration: none;
+                        position: relative;
+                        z-index: 3;
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+
+        &::after {
+            background-image: url('../../imagenes/img_lineas01.svg');
+            position: absolute;
+            content: '';
+            background-size: contain !important;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            height: 100%;
+            width: 100%;
+            bottom: -15%;
+        }
+
+
+    }
+
+    .galeria {
+
+        padding-block: 2rem;
+        display: grid;
+
+        h2 {
+            text-align: center;
+            justify-self: center;
+            font-family: $fuente-3;
+            width: 100%;
+            display: inline-block;
+            color: $color-3 ;
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        p {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            font-family: 'Poppins';
+            color: gray;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .camara {
+
+            justify-self: center;
+            margin-block: 1rem;
+            width: 80px;
+
+
+
+        }
+
+        .carousel-container {
+            height: 400px;
+            width: 100vw;
+            max-width: 300px;
+            // margin: 50px auto;
+            position: relative;
+            justify-self: center;
+            overflow: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 5s ease;
+            height: fit-content;
+            animation: slide 30s infinite ease-in-out;
+            gap: 1rem;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            transition: opacity 1s ease;
+            // opacity: 0; /* Ocultar las imágenes por defecto */
+            display: grid;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+            /* Mostrar la imagen activa */
+        }
+
+        .carousel-slide img {
+            width: 80%;
+            display: block;
+            border-radius: 10px;
+            height: 100%;
+            align-self: center;
+            //animation: slide 30s infinite ease-in-out;
+            justify-self: center;
+            justify-content: center;
+
+        }
+
+        button {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+            z-index: 10;
+        }
+
+        button.prev {
+            left: 10px;
+        }
+
+        button.next {
+            right: 10px;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            16% {
+                transform: translateX(-107%);
+            }
+
+            33% {
+                transform: translateX(-209%);
+            }
+
+            49% {
+                transform: translateX(-315%);
+            }
+
+            65% {
+                transform: translateX(-416%);
+            }
+
+            84% {
+                transform: translateX(-525%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+
+    }
+
+
+
+
+    .fiesta {
+        display: grid;
+        margin-block: 2rem;
+        gap: 2rem;
+
+        .titulo-fiesta {
+
+            color: $color-4;
+            padding-inline: 2rem;
+            font-size: 9vw;
+            font-family: $fuente-3;
+            background-color: $color-3;
+            align-self: center;
+            text-align: center;
+            width: 70vw;
+            font-weight: 500;
+
+
+        }
+
+        .dresscode {
+            display: grid;
+            justify-self: center;
+            background-color: $color-4;
+            padding: 0 40px;
+            border-radius: 20px;
+            min-height: 300px;
+            width: 80%;
+            box-shadow: 0px 0px 15px 0px #002E5A;
+
+
+            .corbata {
+
+                justify-self: center;
+                margin-block: 1rem;
+                width: 64px;
+            }
+
+            h2 {
+
+                color: $color-3;
+                justify-self: center;
+                align-self: center;
+                font-size: 2rem;
+            }
+
+            p {
+
+                font-family: 'Poppins';
+                color: #818B94;
+                justify-self: center;
+                text-align: center;
+                font-size: 1rem;
+
+                b {
+                    color: $color-3;
+                }
+            }
+        }
+
+        .musica {
+            display: grid;
+            justify-self: center;
+            background-color: $color-4;
+            padding: 0 40px;
+            border-radius: 20px;
+            min-height: 300px;
+            width: 80%;
+            box-shadow: 0px 0px 15px 0px #002E5A;
+
+            .notas-musicales {
+
+                justify-self: center;
+                margin-block: 1rem;
+                width: 60px;
+            }
+
+            h2 {
+                color: $color-3;
+                justify-self: center;
+                align-self: center;
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: 'Poppins';
+                color: #818B94;
+                justify-self: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            button {
+
+                justify-self: center;
+                width: 90%;
+                border: 0;
+                height: 40px;
+                border-radius: 20px;
+                background-color: $color-botones;
+
+                a {
+                    justify-content: center;
+                    display: flex;
+                    width: 100%;
+                    font-size: 20px;
+                    color: white;
+                    font-family: $fuente-principal;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .comida {
+            display: grid;
+            justify-self: center;
+            background-color: $color-4;
+            padding: 0 40px;
+            border-radius: 20px;
+            min-height: 400px;
+            width: 80%;
+            box-shadow: 0px 0px 15px 0px #002E5A;
+
+            .plato {
+
+                justify-self: center;
+                margin-block: 1rem;
+                width: 70px;
+            }
+
+
+            h2 {
+                color: $color-3;
+                justify-self: center;
+                align-self: center;
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: 'Poppins';
+                color: #818B94;
+                justify-self: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            button {
+
+                justify-self: center;
+                width: 90%;
+                border: 0;
+                height: 40px;
+                border-radius: 20px;
+                background-color: $color-botones;
+
+                a {
+                    justify-content: center;
+                    display: flex;
+                    width: 100%;
+                    font-size: 20px;
+                    color: white;
+                    font-family: $fuente-principal;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .regalo {
+            display: grid;
+            justify-self: center;
+            background-color: $color-4;
+            padding: 0 40px;
+            border-radius: 20px;
+            min-height: 300px;
+            width: 80%;
+            box-shadow: 0px 0px 15px 0px #002E5A;
+
+            .caja-regalo {
+                justify-self: center;
+                margin-block: 1rem;
+                width: 60px;
+
+            }
+
+            h2 {
+                color: $color-3;
+                justify-self: center;
+                align-self: center;
+                font-size: 2rem;
+            }
+
+            p {
+                font-family: 'Poppins';
+                color: #818B94;
+                justify-self: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            h3{
+                justify-self: center;
+            }
+        }
+    }
+
+    .asistencia {
+
+        margin-top: 4rem;
+        display: grid;
+        justify-self: center;
+        background-color: $color-4;
+        padding: 2rem 40px;
+        border-radius: 20px;
+        min-height: 400px;
+        width: 80%;
+        box-shadow: 0px 0px 15px 0px #002E5A;
+        position: relative;
+
+        .flores-asistencia {
+
+            position: absolute;
+            width: 50vw;
+            z-index: 4;
+            top: -10%;
+            left: -15%;
+        }
+
+
+
+
+        h2 {
+            align-self: end;
+            text-align: center;
+            justify-self: center;
+            color: $color-3;
+            font-family: $fuente-principal;
+
+        }
+
+        p {
+            align-self: center;
+            text-align: center;
+            font-size: 5vw;
+            font-family: 'Poppins';
+            color: #818B94;
+            justify-self: center;
+
+        }
+
+        .link-de-asistencia {
+
+            align-self: end;
+        }
+
+    }
+
+}
+
+footer {
+
+
+    background-color: $color-primario;
+
+    .despedida {
+
+        padding-top: 5rem;
+
+
+        .imagen-despedida {
+
+            padding-top: 16%;
+            padding-bottom: 16%;
+            background: url('../imagenes/manos.jpeg') center center;
+            position: relative;
+            margin-bottom: 6rem;
+            height: 650px;
+            background-attachment: fixed;
+
+
+            &::before {
+                background-image: url('../imagenes/img_ondas05.svg');
+                position: absolute;
+                content: '';
+                background-repeat: no-repeat;
+                background-position: top center;
+                height: 100%;
+                width: 100%;
+                top: -1px;
+                background-color: rgba(178, 166, 209, 0.4);
+            }
+
+            &::after {
+
+                background-image: url('../imagenes/img_ondas06.svg');
+                position: absolute;
+                content: '';
+                background-size: contain !important;
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                height: 100%;
+                width: 100%;
+                bottom: -5px;
+                z-index: 99;
+            }
+        }
+
+        .container {
+
+            display: grid;
+            /* Activar Flexbox */
+            align-items: center;
+            /* Centrar verticalmente */
+            justify-content: center;
+            /* Centrar horizontalmente */
+            position: relative;
+            /* Posición relativa para el SVG y el texto */
+            width: 100%;
+            /* Ancho completo */
+            height: 250px;
+            /* Altura del viewport */
+            margin: 0;
+            overflow: hidden;
+            /* Evita el desbordamiento */
+
+
+            // svg {
+
+            //     // position: absolute;
+            //     // bottom: -360%;
+            //     // left: 30%;
+            //     // max-width: fit-content;
+            //     // height: fit-content;
+            //     // display: grid;
+
+            //     position: absolute;
+            //     /* Posiciona el SVG detrás */
+            //     width: auto;
+            //     /* Tamaño relativo al ancho de la ventana */
+            //     height: auto;
+            //     /* Mantener la proporción */
+            //     max-width: 300px;
+            //     /* Ancho máximo para pantallas más grandes */
+            //     z-index: 1;
+            //     /* Detrás del texto */
+            //     bottom: -32%;
+
+            //     .ampersand {
+
+            //         align-self: center;
+            //         justify-self: center;
+            //         position: relative;
+            //         font-family: 'Poppins';
+            //         font-size: 240px;
+            //         fill: url(#grad1);
+            //         filter: url(#shadow);
+            //         z-index: 1;
+
+
+
+            //     }
+            // }
+
+
+            // h1 {
+
+
+
+            //     position: relative; //sin esto, no se coloca delante del svg
+            //     text-align: center;
+            //     font-family: $fuente-principal;
+            //     justify-self: center;
+            //     align-self: center;
+            //     font-size: 70px;
+            //     line-height: 55px;
+            //     color: $color-3;
+            //     text-transform: uppercase;
+            //     font-weight: 400;
+            //     z-index: 2;
+
+
+            // }
+
+            span.separador {
+                background-color: #AEDCEB;
+                position: relative;
+                display: inline-block;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 40px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;
+                justify-self: center;
+                margin-bottom: 10px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 30px;
+                    width: 80px;
+                    height: 1px;
+                    left: 65px;
+                    background: #AEDCEB;
+                }
+
+                &::after {
+
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: 30px;
+                    width: 80px;
+                    height: 1px;
+                    right: 65px;
+                    background: #AEDCEB;
+                }
+            }
+
+            h1 {
+
+
+
+                // position: relative; //sin esto, no se coloca delante del svg
+                // text-align: center;
+                // font-family: $fuente-3;
+                // justify-self: center;
+                // align-self: center;
+                // font-size: 70px;
+                // line-height: 55px;
+                // color: $color-3;
+                // text-transform: uppercase;
+                // font-weight: 400;
+                // z-index: 2;
+                width: 100%;
+                text-align: center;
+                font-family: 'Style Script', cursive;
+                color: $color-3;
+                font-size: 70px;
+                line-height: 75px;
+                margin-bottom: 0;
+                font-weight: 500;
+
+            }
+
+
+        }
+
+        .ultimo-parrafo {
+
+            display: grid;
+
+            p {
+                padding: 2rem;
+                text-align: center;
+                color: $color-primario;
+                margin-top: 2rem;
+                font-size: 6vw;
+                font-weight: 300;
+                font-family: 'Outfit', Sans Serif;
+                font-family: $fuente-principal;
+                background-color: $color-3;
+                width: 80vw;
+                justify-self: center;
+                border-radius: 10px;
+            }
+
+
+        }
+
+
+
+        h3 {
+            padding-block: 2rem;
+            text-align: center;
+            color: $color-3;
+            justify-self: center;
+            align-self: center;
+            font-size: 2rem;
+        }
+    }
+
+}
